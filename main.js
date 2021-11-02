@@ -23,7 +23,12 @@ $(document).ready(function() {
 
 // clear all list items
     $("#clearButton").on("click", function() {
-       $("#taskList").empty()
+        if (newTask !== "") {
+
+            tasks.splice(newTask);
+
+            $("#taskList").empty();
+        }
     });
 });
 
