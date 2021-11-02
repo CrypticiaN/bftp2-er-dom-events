@@ -23,6 +23,7 @@ $(document).ready(function() {
 
 // clear all list items
     $("#clearButton").on("click", function() {
+        let newTask = $("#newTask").val();
         if (newTask !== "") {
 
             tasks.splice(newTask);
